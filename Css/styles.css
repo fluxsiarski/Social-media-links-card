@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* /////////////////
+   Reset
+//////////////////*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  /* min-height: 100vh; */
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  /* max-width: 100%; */
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* /////////////////
+   General styles
+//////////////////*/
+
+:root {
+  --clr-Green: hsl(75, 94%, 57%);
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Grey: hsl(0, 0%, 20%);
+  --clr-DarkGrey: hsl(0, 0%, 12%);
+  --clr-OffBlack: hsl(0, 0%, 8%);
+
+  --ff-base: "Inter", sans-serif;
+
+  --fs-small: 14px;
+
+  --fw-light: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--clr-White);
+  font-family: var(--ff-base);
+  background-color: var(--clr-OffBlack);
+  text-align: center;
+}
+
+.person-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--clr-DarkGrey);
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  gap: 1rem;
+
+  width: 90%;
+  /* Use 90% width for smaller screens */
+  max-width: 600px;
+  /* Set a maximum width for larger screens */
+  margin: 1rem;
+}
+
+.user-image {
+  border-radius: 50vh;
+}
+
+.user-info__name {
+  font-weight: var(--fw-light);
+}
+
+.user-info__city {
+  color: var(--clr-Green);
+  font-weight: var(--fw-medium);
+}
+
+.social-media-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* min-width: 80%; */
+  margin: 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  background-color: var(--clr-Grey);
+  border-radius: 0.6rem;
+}
+
+.button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+  color: var(--clr-White);
+  font-size: 16px;
+  font-weight: var(--fw-medium);
+
+  &:hover {
+    background-color: var(--clr-Green);
+    color: var(--clr-OffBlack);
+    border-radius: 0.6rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
