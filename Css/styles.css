@@ -100,6 +100,11 @@ body {
   border-radius: 50vh;
 }
 
+/* .user-info {
+  display: flex;
+  flex-direction: column;
+} */
+
 .user-info__name {
   font-weight: var(--fw-light);
 }
@@ -144,6 +149,10 @@ body {
   }
 }
 
+.white-spaces {
+  white-space: nowrap;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -151,4 +160,18 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .user-info {
+    font-size: 13px;
+  }
+
+  .user-description {
+    font-size: 13px;
+  }
+
+  .button a {
+    font-size: 13px;
+  }
 }
